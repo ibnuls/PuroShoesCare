@@ -1,0 +1,884 @@
+{
+  "source": "PURO Revisi 10 v4",
+  "stack": {
+    "laravel": "v12.73.0",
+    "livewire": "v4.4.8",
+    "database": "PostgreSQL",
+    "rag": "Gemini API"
+  },
+  "tests_passed": 33,
+  "files": [
+    {
+      "path": ".dockerignore",
+      "sha256": "5e03299020992844e559d759375f9d4260ed10c75c66f1a6e0ed0466ea228866"
+    },
+    {
+      "path": ".editorconfig",
+      "sha256": "f78cc5a2ef8ba61ad956d0f5db453748a981270f6a1b9f4a5a00df8690e7946d"
+    },
+    {
+      "path": ".env.example",
+      "sha256": "5848491b06c4b485078f34e175a7d02b2b6f1c04d87d187ee0926f213ed2a21a"
+    },
+    {
+      "path": ".env.testing.example",
+      "sha256": "23def317c4c292888a5799cd0d6c1245df099245dd331e9d02bfdffb6d86ed48"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "a40eb27ee0b545ca5b5542daaf99fec51f84f23b3766a6353864ef2a115bc51c"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "ffb333b8bde9c51d4a446524726f9b7471eddd6ebbaed62885fe4f8b2b4a549b"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "bd614ca032bda7355a00df2d05705bb875b0c99a0173e4caac7456cfdf1de72f"
+    },
+    {
+      "path": "README.md",
+      "sha256": "b8684c475b7c0d2a2698390b952eae335b90441ab5def7b1d093b62f4f74cba3"
+    },
+    {
+      "path": "app/Http/Controllers/Controller.php",
+      "sha256": "25d1c1ef8e6cc8a376553faacfba2b07d9dfaee9bdbb84f14f77517580e9deb1"
+    },
+    {
+      "path": "app/Http/Controllers/LogoutController.php",
+      "sha256": "f11404b18ea90fc1cd280990fbd4e7899de9fff73c99bf5389d8300b805d5130"
+    },
+    {
+      "path": "app/Http/Controllers/MediaController.php",
+      "sha256": "a942f57c6232089277bd71547391aa237774f8ad4c5c8b1505c59aef64c2370d"
+    },
+    {
+      "path": "app/Http/Controllers/PosterController.php",
+      "sha256": "b90f0da0c28d9afa3fe9a582bdb59ad82546b4851600f7189afd321546b8c047"
+    },
+    {
+      "path": "app/Http/Controllers/ReportController.php",
+      "sha256": "a896435ff2c701b4271ad2d03cd1511f04c82da2cd2aad6ae7065a4f8b7ffeb8"
+    },
+    {
+      "path": "app/Http/Middleware/ActiveStaff.php",
+      "sha256": "b2f3b5dda89edf39479189d2e57c7c2ebe55867597c09f672eaf6d12cdffd373"
+    },
+    {
+      "path": "app/Http/Middleware/PrivacyHeaders.php",
+      "sha256": "723cf97461330483f6844ac814b058d95a0fa4f35e472d1deaf59a2a6bec06ca"
+    },
+    {
+      "path": "app/Livewire/Booking.php",
+      "sha256": "755169eb6a1baa6bdf552045e8fd7ca5a82db4d054ad614d24287b76f5196718"
+    },
+    {
+      "path": "app/Livewire/Chatbot.php",
+      "sha256": "a247f0523cefc34e2cd8356e53169591bc87e51c1e9b7203ff8ed6083488cd99"
+    },
+    {
+      "path": "app/Livewire/Dashboard.php",
+      "sha256": "4b20be2e5420180d3c9dc2a2a35f40996b232d54775a789827d4b6797a04cf83"
+    },
+    {
+      "path": "app/Livewire/Management.php",
+      "sha256": "01f25ad4af9039d70fff263915c823751940d0296724e4cdc5095a19b877cbd2"
+    },
+    {
+      "path": "app/Livewire/PublicPage.php",
+      "sha256": "f80569da598d62be0cee7adbae8aeab875cdd98d89c4ee9b46291c2219018dd0"
+    },
+    {
+      "path": "app/Livewire/StaffLogin.php",
+      "sha256": "ef5bc0bd4f94d1454e7915c6ea6757937ff67e0d25ecacb8bdbece97d2bc3ba9"
+    },
+    {
+      "path": "app/Livewire/StaffOrder.php",
+      "sha256": "5c4cae8b84e7a93f755aa679ab89fbe0487de47a9efb7da6df35c1a1137ee640"
+    },
+    {
+      "path": "app/Livewire/Tracking.php",
+      "sha256": "89a34a569af9764e7d8334429563d4b4678ba9f9a86485401d953e33ef395457"
+    },
+    {
+      "path": "app/Models/AuditLog.php",
+      "sha256": "7c683811c86ff150605b0e8a54d0277a0688e2037651e4329e60488c4e2d6cce"
+    },
+    {
+      "path": "app/Models/Branch.php",
+      "sha256": "24b3331d73f9ec9bbc27dbbbaee147aa2e305762e7193219bdf8494c6b01b533"
+    },
+    {
+      "path": "app/Models/CourierTask.php",
+      "sha256": "c24855ff0d4cf864346e418aeb945fd4e961898c38d1b61f54d9eb465db5821d"
+    },
+    {
+      "path": "app/Models/Inspection.php",
+      "sha256": "e71f1b2fd9b24d65c7a43fa3b203b7bed3959ef49387290acf34bb650440a1c4"
+    },
+    {
+      "path": "app/Models/ItemPhoto.php",
+      "sha256": "71cf7a7328fd7f1751f734db994a4b1afbd6c7dac64dd7c377f79ab0341ca1c9"
+    },
+    {
+      "path": "app/Models/KnowledgeChunk.php",
+      "sha256": "2386eddc96500a16a18827a4653e0756300d56055802470f2a787c403fd0fe8f"
+    },
+    {
+      "path": "app/Models/KnowledgeDocument.php",
+      "sha256": "6ba022a24ef2afa7bab40cd3ef70d7f288fcdff044bfedf64030aca69aa8cae8"
+    },
+    {
+      "path": "app/Models/MediaAsset.php",
+      "sha256": "8f7dd6509a26f3d49532dfe143f52aa5eaa72782103fc2532dd00f9bc344acb6"
+    },
+    {
+      "path": "app/Models/Order.php",
+      "sha256": "d6adc44c6aeca89d857a9e90a6b2290aab1578094262a4c2269d4b9e9e469a2e"
+    },
+    {
+      "path": "app/Models/OrderCancellation.php",
+      "sha256": "799f188cb579d9a1059423d300b4d4feab52efb93d13b281e4b59528cca92338"
+    },
+    {
+      "path": "app/Models/OrderItem.php",
+      "sha256": "67762ce373cafeffd842dabcd084307e0b114cb4ab9df103dda6bdda45e816bd"
+    },
+    {
+      "path": "app/Models/OrderReceipt.php",
+      "sha256": "f36be1cb31197e82dca3b05b43fbd45e41daf37df20dfec5633e54ca09ac3f15"
+    },
+    {
+      "path": "app/Models/OrderStatusHistory.php",
+      "sha256": "c04459376a7e03071b3a61fed7ec6dfd15c0e3fbee3e181e7066914e01225bab"
+    },
+    {
+      "path": "app/Models/PaymentReference.php",
+      "sha256": "68805ee84318ccc00bd3fc6c907f9993381e694728a50c305f7fcfef92f11816"
+    },
+    {
+      "path": "app/Models/PaymentSubmission.php",
+      "sha256": "b8d13bae2d55fa8b6e8b74b133307a55c9ce0509d75985b53ed94b3dfdf6e6dd"
+    },
+    {
+      "path": "app/Models/Permission.php",
+      "sha256": "b695caa0cec93b13a468252e191ac6ef7d166aa5e4e8a0c63a21c4f713ff08ae"
+    },
+    {
+      "path": "app/Models/PriceQuote.php",
+      "sha256": "d3511229c7d0290101bd30e76d83f4c2adccac20264fac8d16cff4ed4342bdac"
+    },
+    {
+      "path": "app/Models/Promotion.php",
+      "sha256": "0b70622970995674199123b20b71926e826744d342cc1207807b1c8ba5322ae4"
+    },
+    {
+      "path": "app/Models/PromotionVersion.php",
+      "sha256": "9d4c82e652bc480de71f647a33849e03e00f00a090ead1eb6f2fe31dfab669af"
+    },
+    {
+      "path": "app/Models/QcCheck.php",
+      "sha256": "75e7ba1bb17ccd6d62e139671ed273a83c75f7bdea7fd6acc8167b43d060bb64"
+    },
+    {
+      "path": "app/Models/QrisAccount.php",
+      "sha256": "7b3d6970020b4873c6bf88543ada595bb0e3be8a55c7ccb65853dab4af475b2f"
+    },
+    {
+      "path": "app/Models/QrisAccountVersion.php",
+      "sha256": "8525f08a51766893c71d9de7e3951734aa5e7bbf31338906ac2ade257647669f"
+    },
+    {
+      "path": "app/Models/QuoteItem.php",
+      "sha256": "bbc75bac48b0f431f17511c563b0a3b699aaf58c583ec9e0c75b0d8fc9ff3cf4"
+    },
+    {
+      "path": "app/Models/Record.php",
+      "sha256": "fad20135114f38259af1a16f9c99f1344674a9f6b1492ccbc8816933b989262c"
+    },
+    {
+      "path": "app/Models/Role.php",
+      "sha256": "80c75a987c60a9b6ef2adc1109e6cfa52548c797762a119da522678c561e7600"
+    },
+    {
+      "path": "app/Models/Service.php",
+      "sha256": "449955ab8dff4078d35b44f88fd218daeb659efc41c533b574d84550745e8f4e"
+    },
+    {
+      "path": "app/Models/ServiceCategory.php",
+      "sha256": "edf944fd5f604ad8bbb92032bb91d5fa6f4a0fea9c499423fd62fa92d699c84a"
+    },
+    {
+      "path": "app/Models/ShippingPolicy.php",
+      "sha256": "0b6f707acbd5f0fe80b859c4c892adce66cec67e907b746d47a32e07fed3c907"
+    },
+    {
+      "path": "app/Models/StaffUser.php",
+      "sha256": "e0e07207d47191350fedd2ba92319f46dfc25556baa4180a726c41cc81eaa9e4"
+    },
+    {
+      "path": "app/Models/TariffVersion.php",
+      "sha256": "0a084b71b162f0024acc234cceee986616a799b2499e475d1e7a785347b749a5"
+    },
+    {
+      "path": "app/Models/TreatmentLog.php",
+      "sha256": "6d2a737dfe6cbeb45031f1631d93a052ff6dc6e0de77b4fa3ecc64c648d47835"
+    },
+    {
+      "path": "app/Models/TreatmentPhoto.php",
+      "sha256": "490191fcf5cdab18d8bdb23c4902302adbe9b553f38b8426e009bb7a17f3d5ad"
+    },
+    {
+      "path": "app/Models/VerifiedPayment.php",
+      "sha256": "d595630884bee65b39a0a653eb6443ddc926a56d6708423fd1312dbb7d709eb8"
+    },
+    {
+      "path": "app/Providers/AppServiceProvider.php",
+      "sha256": "2ec109e290a29ca38f3b1b414f43bbd2022f05913f3a8835f809daf5f417b509"
+    },
+    {
+      "path": "app/Services/Assistant.php",
+      "sha256": "0f75d023240f11a1b569a12cd7400483ad0e85a6adfa334aea3eae803c092933"
+    },
+    {
+      "path": "app/Services/Knowledge.php",
+      "sha256": "06638217d0c66e8bc370738bcb5f660300bbe00f71efda7c3b10b96c9ae0d8fb"
+    },
+    {
+      "path": "app/Services/Masters.php",
+      "sha256": "37e3ddb8876984d5df801c3052ef18d43aae54a5977a5c4ebe56c9afbc0544f6"
+    },
+    {
+      "path": "app/Services/MediaStorage.php",
+      "sha256": "6142272584e7ef4b96d267be1ada1ca437643498260594e72cab483c6f83dd1e"
+    },
+    {
+      "path": "app/Services/OrderAccess.php",
+      "sha256": "bf0c9a7d0258e28752565d34c989371c00ded0439221ebbf35768c9695a1cc2b"
+    },
+    {
+      "path": "app/Services/Pricing.php",
+      "sha256": "90077f737605cbcea36e32af3d8548bf732990b5467c42e86a01b8e9ce0e527f"
+    },
+    {
+      "path": "app/Services/Reports.php",
+      "sha256": "f5588679c770366603f79f2cf1c282910a124f55e7b736b658341aaeee95e572"
+    },
+    {
+      "path": "app/Services/Workflow.php",
+      "sha256": "fccb770c02d6ca38fe1147daac78a7af6c6593008d8008239ad56c26d4960c94"
+    },
+    {
+      "path": "app/Support/Puro.php",
+      "sha256": "137f3f69695aec96ca616b560d8efd95c259fe53a9567055e3a2031324b399d4"
+    },
+    {
+      "path": "artisan",
+      "sha256": "f91a517c0c5d3a904c3f390933964a5e08ec1fc68146882730daac4aca4ffcec"
+    },
+    {
+      "path": "bootstrap/app.php",
+      "sha256": "5e6a2c07e122fe4cd374dce562f75293fb6b86b47e09c1e3830340da1ad62c6f"
+    },
+    {
+      "path": "bootstrap/providers.php",
+      "sha256": "f720e185207a343d4c19fc99dbb317a4187efbcd7d38a303a695bbdd77ffb943"
+    },
+    {
+      "path": "compose.yaml",
+      "sha256": "1ed23fd690fbc5fd23caaa32d736c5bc3b83f65a6dabca6e70873599f46a6cd7"
+    },
+    {
+      "path": "composer.json",
+      "sha256": "b8c451094528252a360ccda0682298e359a9223ca061861e83d6f4df0baaca4a"
+    },
+    {
+      "path": "composer.lock",
+      "sha256": "6f771c35cffead8e16432b6e71fa27a8e11345f5d88981c8cb727d1fbda1d6c5"
+    },
+    {
+      "path": "config/app.php",
+      "sha256": "78dcd36b226fd7b24057cb95f567cb6e96561c2406653892d8aef6dcea8461e4"
+    },
+    {
+      "path": "config/auth.php",
+      "sha256": "fd8924078573214ce67d614c5d09d626e051c184a9deea0b5f5a8172139de1e3"
+    },
+    {
+      "path": "config/cache.php",
+      "sha256": "b8bcf382283330b94c0a602ff06452de819041ea709e28eea5065d51d1d7d085"
+    },
+    {
+      "path": "config/database.php",
+      "sha256": "06759b7b36b8641e9025fe03dd728970c4cb02d5b58ff709cbb0649987b4bfc2"
+    },
+    {
+      "path": "config/filesystems.php",
+      "sha256": "167dd51e6b13f1b338b703f8cb2b49828b98289306208915ec9dac347471c64d"
+    },
+    {
+      "path": "config/logging.php",
+      "sha256": "299ec1ba5b5a803c8e20f666ae7628e442e856cc2ff7ac9e2adb17b97e8ad63b"
+    },
+    {
+      "path": "config/mail.php",
+      "sha256": "c43ff49a31c5f32ce21eb7159f2a4b3cd2f4074eaed5838d265646dbfedd3474"
+    },
+    {
+      "path": "config/puro.php",
+      "sha256": "d6a5f27213b6a96db83f94b80bd595aad7a3ce34886378d65e30a527e6d6f974"
+    },
+    {
+      "path": "config/queue.php",
+      "sha256": "6101774da7c8b79af46d0028f2b8b31a484c3f7eda10b76e5b27b6093ad364a4"
+    },
+    {
+      "path": "config/services.php",
+      "sha256": "8258c4487eb1d73a97e569eb0e411e3f25368044812df4cba807860432be1d92"
+    },
+    {
+      "path": "config/session.php",
+      "sha256": "f2e75e189021597e29940c0859c00c3088ec591e403768fff5143c5687a80f59"
+    },
+    {
+      "path": "database/.gitignore",
+      "sha256": "e758642d95e83e907e010b6e46b07b3f953c7cef11fe5ebefc2a77b9d7b4d5f7"
+    },
+    {
+      "path": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "sha256": "2ca8398390ecef8eaf72aeac7fefce67f7de631b6f2ec7b7081c8db8953215dc"
+    },
+    {
+      "path": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "sha256": "7c9c712adf4091c87bf2612f4d0dccdfa1df4501553e4ac068b83d7bd5462fa5"
+    },
+    {
+      "path": "database/migrations/2026_11_17_000001_create_puro_domain.php",
+      "sha256": "14550da3252c55631549d7437139a02cf118da6598d27668ef0982929bedeaa9"
+    },
+    {
+      "path": "database/migrations/2026_11_17_000002_add_runtime_and_knowledge.php",
+      "sha256": "3bac3b8e5d9583ceef1cdc03b166a9464a583dc14a036db3dc5968b9e0b15cd0"
+    },
+    {
+      "path": "database/migrations/2026_11_17_000003_checkout_constraints.php",
+      "sha256": "4da56968140dab1d6b3b9164fb760d5f3956e9ff526dcfcd3ed2730a85827b7f"
+    },
+    {
+      "path": "database/schema/domain-tables.json",
+      "sha256": "ebb37e409cd5f54d65ca3e42931c5d5d01553aad327e38f8684df684502deb27"
+    },
+    {
+      "path": "database/schema/invariants.sql",
+      "sha256": "c7e3895b2151f9d3721a9f7a5a60e36ddd02a41177ee46b7557a1d19d0e9b080"
+    },
+    {
+      "path": "database/schema/puro.sql",
+      "sha256": "3f4d5ea0b7822b199ab2c42c011774f4af5689cdbc720a4a8d8e812dc176b0d3"
+    },
+    {
+      "path": "database/seeders/DatabaseSeeder.php",
+      "sha256": "3cdd5c3496f80d591aba74f16f6a7a12764cf068401e98fead0e791a08107fda"
+    },
+    {
+      "path": "database/seeders/catalogue.json",
+      "sha256": "e67b45cc7df5e2736f3911986905dde88cdd370378c60de554140a3a066bf852"
+    },
+    {
+      "path": "docker/entrypoint.sh",
+      "sha256": "267e689f396a5350fe7016c01f8df8065eb082e7bbb6ee58158010351fa3a58f"
+    },
+    {
+      "path": "docker/php.ini",
+      "sha256": "cefa6e4e0b1a400de98d1b630891614844bb0a6e39cb81711ca561648ccfb924"
+    },
+    {
+      "path": "docs/ARSITEKTUR.md",
+      "sha256": "40809dee9b6df27348899518235dcf0d38e3737d0a240e904b9aa3cdf81f541b"
+    },
+    {
+      "path": "docs/DEPLOYMENT.md",
+      "sha256": "9aa8587126902f0c36dbcf34491069342b0724eeb67eabcebf88917dacee7ee1"
+    },
+    {
+      "path": "docs/PANDUAN_TEST_TIM.md",
+      "sha256": "cf746401952633626973e06b35f44be71a4a82e88a008881f67f8119290e4a08"
+    },
+    {
+      "path": "docs/VALIDASI.md",
+      "sha256": "1cb7ccf5a7e6b91ad8f57724b54e94fa80ec7169aecdefc7890034f1dd5b43dd"
+    },
+    {
+      "path": "lang/id/validation.php",
+      "sha256": "eec78df10c3bc21494127224c0c7d1fe7efa1877a37b1d8c8c3d73490794f01d"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "9677c3bb6f3825b47d69a19f5608498b53285a2dc1d0dc636f640c63ee028100"
+    },
+    {
+      "path": "package.json",
+      "sha256": "2cbe82ea8cbbb805e141fc80fbb85b5621a2c2fb593fe49e55e4c372b8a5511b"
+    },
+    {
+      "path": "phpunit.xml",
+      "sha256": "ca0a1b2cdf2737946139918018f5ed8b4250989dd84befbafb1cd3e57439a2c2"
+    },
+    {
+      "path": "pint.json",
+      "sha256": "25449a02e8e162663a9b4f27d72588cd2fb4d6506f01ef8a9a43744191a07c2a"
+    },
+    {
+      "path": "public/.htaccess",
+      "sha256": "b7e379c77639fd56144947dbae84c84eb466d9c686ea81f2f013ae85421da923"
+    },
+    {
+      "path": "public/assets/assistant.css",
+      "sha256": "0b0b72c3f184ca8e099d739b2101b3ee2917f137ef42f903b4ba2fa06cbbec58"
+    },
+    {
+      "path": "public/assets/branch-1.jpg",
+      "sha256": "35d6115e80c2e9579b0ffbbd7221751181ac43933d2b52ff266979b230064b90"
+    },
+    {
+      "path": "public/assets/branch-2.jpg",
+      "sha256": "fbde67204c06b8bd741a5e8cff7b9dbd748c0f795c0f0f395094023562ae5a5a"
+    },
+    {
+      "path": "public/assets/branch-3.jpg",
+      "sha256": "76c7349cc9f3cf3ce3f9f678365209919f6666df93fcdd1d35e2975d43d1eca8"
+    },
+    {
+      "path": "public/assets/branch-4.jpg",
+      "sha256": "a50cd57e3694e0f67dc4d96629a85dd241d53fb5ae6765160ef8218e0a028306"
+    },
+    {
+      "path": "public/assets/example-photos/backpack.jpg",
+      "sha256": "74e086289882e437f908e483bcd98f9e8885887c9a07792555c5220da88b54f5"
+    },
+    {
+      "path": "public/assets/example-photos/cap-hat.jpg",
+      "sha256": "2e67bfce5065fbef16dce2133766c0def8188d16b4c0e1487c0cf01a1dea8a87"
+    },
+    {
+      "path": "public/assets/example-photos/clutch.jpg",
+      "sha256": "6d60c7b28b3e4beff26763c891a191b3aabe5ffc8eb2f7168acd2bfb26c67cd1"
+    },
+    {
+      "path": "public/assets/example-photos/full-face.jpg",
+      "sha256": "b606a72fdbf963bcd1329590856686730072c976d48e3979b3147d1e591aede7"
+    },
+    {
+      "path": "public/assets/example-photos/half-face.jpg",
+      "sha256": "95a7dfe60be591b4036c3489eede2f9bddafe837207e84dfbcd61bcab6a24953"
+    },
+    {
+      "path": "public/assets/example-photos/shoulder.jpg",
+      "sha256": "f74f0640118a0219ccd675ea5d13e2107308517fe9fdfd6069a1aaa127d5c9ea"
+    },
+    {
+      "path": "public/assets/favicon.svg",
+      "sha256": "c53407334674ccb00894356c2e76cc253f077e6fefe4f03c41f541b6ffdab22e"
+    },
+    {
+      "path": "public/assets/hero-puro-mobile.jpg",
+      "sha256": "c5694d48942a76049e4d608fea7da202dea0b2fcaffd4b7fecfa633ca0c87b7d"
+    },
+    {
+      "path": "public/assets/hero-puro-sneaker.jpg",
+      "sha256": "cf8111e3e77a1d668065db326116e28b6cf01e74f4b350ac5d658ad9c2201b1b"
+    },
+    {
+      "path": "public/assets/hero-puro-v5.jpg",
+      "sha256": "98a5ae93981b3bc8261f6b3209356e1f947482a1899001110ec040f032c2cc92"
+    },
+    {
+      "path": "public/assets/icon-bag.png",
+      "sha256": "60520a09cd4c3c580b9adb122fca0da67101e794f462f335ab55e0018b2fdb66"
+    },
+    {
+      "path": "public/assets/icon-loupe.png",
+      "sha256": "aaf9f0e6bf3eb9e71ff226fadd077f75cd6706aec64ccccaa63f9dc1b7f986d7"
+    },
+    {
+      "path": "public/assets/payments-v8.css",
+      "sha256": "ece7639422729371a1a382cc9a948e766a822cae7769b6475264ce9e06e68391"
+    },
+    {
+      "path": "public/assets/puro-logo-black.svg",
+      "sha256": "e994f4637d29b7192ecc48ad07eb6888c62a09daad55eb051dc871569ac42c8e"
+    },
+    {
+      "path": "public/assets/puro-logo-yellow.svg",
+      "sha256": "43628498234271c92faf30ff529568893ebb33e67c790c1475f39b14cf6942ab"
+    },
+    {
+      "path": "public/assets/puro-mark-black.svg",
+      "sha256": "c46d2aced9af3a72f93d8929cef00446699360fe55d24bfdf154f43e0d5dd30e"
+    },
+    {
+      "path": "public/assets/puro-mark-yellow.svg",
+      "sha256": "a6ecd2a52aabc7bf9750e55c9c13aaf2415aca361bbe0f3df3dad716946e7a87"
+    },
+    {
+      "path": "public/assets/puro-v3610.css",
+      "sha256": "85d9dea4f72ede5ee4d5be1a3a0e4c974bc1d14e7b6640544068fbdd14eaf76b"
+    },
+    {
+      "path": "public/assets/responsive-v9.css",
+      "sha256": "36b92d8421eaf3cffc59a67b3ac7e718298df4a714a2651f9461a0d76bf7d3b4"
+    },
+    {
+      "path": "public/assets/service-1.jpg",
+      "sha256": "e33b6c980ab6e9f89b8e044cf49eaba1c06b746f8949a63e72ac7c7635374149"
+    },
+    {
+      "path": "public/assets/service-2.jpg",
+      "sha256": "804a12c7ba01745c8c5980b20eb17fe20d421677ebfcaff7ae33bcff1dcf9036"
+    },
+    {
+      "path": "public/assets/service-3.jpg",
+      "sha256": "23d716f7ca43562331a3298616f031747cfebac1b86fc94d759fd5671dad87a5"
+    },
+    {
+      "path": "public/assets/service-4.jpg",
+      "sha256": "4fc265acf909a765ee113390c877393f75946299aad51867f05569fdf2d58e20"
+    },
+    {
+      "path": "public/assets/service-5.jpg",
+      "sha256": "271fbdc9752a0d729d6b62cd539af13202c7dd1dad40e681c42e96eb36ef25d5"
+    },
+    {
+      "path": "public/assets/service-6.jpg",
+      "sha256": "ac48e7e600c1377cf1794dab3c8074e600b96eb2cd0da764dc0ee4e43955f552"
+    },
+    {
+      "path": "public/assets/service-photos/backpack.jpg",
+      "sha256": "9ee31092b0d28b9c668e4c50015858ee89f128356a3b5e14f739f9515a3759a8"
+    },
+    {
+      "path": "public/assets/service-photos/cap-hat.jpg",
+      "sha256": "e548729167830608522d0ec8f7ed20677a409927992b9f934fcda415dea0c6d7"
+    },
+    {
+      "path": "public/assets/service-photos/clutch.jpg",
+      "sha256": "b6de03f65de6285cbb7d4178f3a78c766b400062079838038b4f3cae4b2921a4"
+    },
+    {
+      "path": "public/assets/service-photos/full-face.jpg",
+      "sha256": "d779b11abbc8342eefcd073fd873faab3ba462d5db10927c5bce1e08a4ed3a76"
+    },
+    {
+      "path": "public/assets/service-photos/half-face.jpg",
+      "sha256": "8d999fe13599e5128d176f8ab4f4abc27f1af11d6d5e5a28a95dc1c56d83df6d"
+    },
+    {
+      "path": "public/assets/service-photos/shoe-1.jpg",
+      "sha256": "110cd41e90deb21387599a5684e52e1726d0289b5a92ac190e2e0779113fcdcc"
+    },
+    {
+      "path": "public/assets/service-photos/shoe-2.jpg",
+      "sha256": "c1fef2205278bdf79ae72e6a7de648f58a5c2fbedab95256b1a6f337ee906aed"
+    },
+    {
+      "path": "public/assets/service-photos/shoe-3.jpg",
+      "sha256": "7324dcb6af3c5bc5563247130316cd19e46f982ef5f876df6005ff888c90bd7d"
+    },
+    {
+      "path": "public/assets/service-photos/shoe-4.jpg",
+      "sha256": "11494f3ffa0fda104ff90bc5398ca2cb92a2786d959cc2c3a1dbfd8afbb1bd23"
+    },
+    {
+      "path": "public/assets/service-photos/shoe-5.jpg",
+      "sha256": "6581c298447c0fce2380081273183a15ccc54848f27921ab1a379fb6b566ff59"
+    },
+    {
+      "path": "public/assets/service-photos/shoe-6.jpg",
+      "sha256": "78bd902282963daf7a34a95c573e0e1e894bdd7976e7334192b0607f547dd9e9"
+    },
+    {
+      "path": "public/assets/service-photos/shoulder.jpg",
+      "sha256": "0b66e4e7e36732e4d0b6c84b06fcd9515800e12baf8d0e1f413d45e79d0ef01b"
+    },
+    {
+      "path": "public/assets/service-photos/white-shoe.jpg",
+      "sha256": "629792e26431bd5bf5ff473e47114370187b66fa38a6b58b4b9d21fce64d2f01"
+    },
+    {
+      "path": "public/assets/service-posters/backpack.png",
+      "sha256": "0aff2b97fb8979bc2294a6ab19ec9ad9158b2e48ffae09fecaf905bff9d42982"
+    },
+    {
+      "path": "public/assets/service-posters/backpack.svg",
+      "sha256": "85b04c7fe94a5f900d3f2b3b9c22088a4e2dffd669e24a54699d5601e0d61f79"
+    },
+    {
+      "path": "public/assets/service-posters/cap-hat.png",
+      "sha256": "4cb7f828a8c1ccd9bba82017c585b7cdce7129e8e44f93bf101355f61a419e2a"
+    },
+    {
+      "path": "public/assets/service-posters/cap-hat.svg",
+      "sha256": "aab7d127e7dc4d8c251cfdb5cdc808178ac9fe84cf8ebe60ad3fcadcea1bf995"
+    },
+    {
+      "path": "public/assets/service-posters/clutch.png",
+      "sha256": "2ffabb6871a270626fa144c6275f51d1b67c058230975c7320ea77199125dfbe"
+    },
+    {
+      "path": "public/assets/service-posters/clutch.svg",
+      "sha256": "19f0c97ad2aa5c389501c2b0706379f6961cac73b469659a928842be918596ee"
+    },
+    {
+      "path": "public/assets/service-posters/coating.png",
+      "sha256": "e4abc9b82bec097a8358b6cab4db329e689bf85b1a367ba252a9627e77463275"
+    },
+    {
+      "path": "public/assets/service-posters/coating.svg",
+      "sha256": "bcd2ba7bd92f2ca77db3d39c3c082135da7f40c5a3e1d143ef334089e21a3879"
+    },
+    {
+      "path": "public/assets/service-posters/deep.png",
+      "sha256": "e6dbce674011601b4fb5d0d37d3811b342f6e03252026f93b2fc96887e79b464"
+    },
+    {
+      "path": "public/assets/service-posters/deep.svg",
+      "sha256": "18542775dafdadf1ec9e60a576bbcc51da2da491f706b145e862b20bd5b22994"
+    },
+    {
+      "path": "public/assets/service-posters/extra.png",
+      "sha256": "739bd983c985c0d873d33aa59cbb3c99055b9bbb0718f97b52a7bb98593c0a01"
+    },
+    {
+      "path": "public/assets/service-posters/extra.svg",
+      "sha256": "44bd11df575466dabcbd49086658026f9eaa4dd3a97118eacce27a68343dda53"
+    },
+    {
+      "path": "public/assets/service-posters/fast.png",
+      "sha256": "461614e31242ee34f09f79c420add5f4fc4a7281f9faaf159ce15c42ee49c9d2"
+    },
+    {
+      "path": "public/assets/service-posters/fast.svg",
+      "sha256": "62d23218112c24486aa606c603ddbb4c7bf479a9231cef9742bb5b68b2b6fcbb"
+    },
+    {
+      "path": "public/assets/service-posters/full-face.png",
+      "sha256": "410e7c326658d5ff656a1cf128c3caa3bd4a252fd6f895d89219962633611e49"
+    },
+    {
+      "path": "public/assets/service-posters/full-face.svg",
+      "sha256": "c3522eff47f0f08b1ede69956bd03d78b4d63238629d5c573a67118b577e47df"
+    },
+    {
+      "path": "public/assets/service-posters/half-face.png",
+      "sha256": "c1d58c82dd5820c5197fa822a3451c988938e980656dcd6f5aa55cccdf2319d2"
+    },
+    {
+      "path": "public/assets/service-posters/half-face.svg",
+      "sha256": "80950666a98244ecec468306f47497313c3b41bf7703a5cfcd98df7decd47bfd"
+    },
+    {
+      "path": "public/assets/service-posters/helmet-care.png",
+      "sha256": "79eb00fd6ad5b9bbbd786d10d968d13c4a2e0803f5b5b900e4682786f7ea6669"
+    },
+    {
+      "path": "public/assets/service-posters/helmet-care.svg",
+      "sha256": "7da3bb62f71bf5e9754e044faff157177bd93529a90b00e4287888f87446e0af"
+    },
+    {
+      "path": "public/assets/service-posters/leather.png",
+      "sha256": "e65cda480647b9567656b8057207bcbfa0fa97aff1c58d7b418a5137af81e1c1"
+    },
+    {
+      "path": "public/assets/service-posters/leather.svg",
+      "sha256": "7f8f56ab3ebf30a33463f857980f97722096dbcc7b9e908554cfa8aee9ff03c2"
+    },
+    {
+      "path": "public/assets/service-posters/reglue.png",
+      "sha256": "9ee5d86424c6c01bec3f7bb6fa066ae00ddae743a32484a6bd9f775a1f7d036d"
+    },
+    {
+      "path": "public/assets/service-posters/reglue.svg",
+      "sha256": "2d3be093dbce3406ed14c13b9470ec814fe4739b3ad184f2d1d48ba9369cdb9c"
+    },
+    {
+      "path": "public/assets/service-posters/repaint.png",
+      "sha256": "aed7d42008006216aa3f6dfbc5b86c58909a38448e2236a9874bbf444dd69cc0"
+    },
+    {
+      "path": "public/assets/service-posters/repaint.svg",
+      "sha256": "8288ff37b6dba53b1b48865f79997c1b45c584b4ea5375d451d80fd1a63a7844"
+    },
+    {
+      "path": "public/assets/service-posters/shoulder.png",
+      "sha256": "3dc0393917cf636a00c8ffac5f5019ac0572135247df5a1b572fb7aa6453e011"
+    },
+    {
+      "path": "public/assets/service-posters/shoulder.svg",
+      "sha256": "dfaf0ccef9ef354874bc935ff352b891bf1c3d21df3aaee62bbd6bdc7b180f61"
+    },
+    {
+      "path": "public/assets/service-posters/unyellow.png",
+      "sha256": "4508953ada69925d8d72d9227d40f3d4da7532f47878375ea55dd2ed6d44d918"
+    },
+    {
+      "path": "public/assets/service-posters/unyellow.svg",
+      "sha256": "e39d8381631fc64776c1e6c6f8f51de8a109094c84f2e0f5ad5266531ee6e84f"
+    },
+    {
+      "path": "public/assets/service-posters/white.png",
+      "sha256": "990c4290a48ad4aec473f6947ac4eb4f57aa5354ea69a84c03f09b9685c016a1"
+    },
+    {
+      "path": "public/assets/service-posters/white.svg",
+      "sha256": "569a20aa01b67e1ce55ba63bd07cdd5165ad34cfc2ffe09a6627d275e4827910"
+    },
+    {
+      "path": "public/assets/service-posters/women-kids.png",
+      "sha256": "28801b8f9599225e90ac051091b77a3451a843d25204f6bf5cc289f53fed2708"
+    },
+    {
+      "path": "public/assets/service-posters/women-kids.svg",
+      "sha256": "0b4f4608688744ed9d1dc0557ee83ecaa94b17dbd3dddc596137c4b5399b3277"
+    },
+    {
+      "path": "public/assets/styles.css",
+      "sha256": "6862479c32b3a6a0798302fd9abafd2cb9984a7ee0566113604030877ff31ac4"
+    },
+    {
+      "path": "public/build/assets/app-CRo5Hv3G.js",
+      "sha256": "2dfa9ff4fff38b5fa109c90d7161e9ff2d7e7f0b60ca33f5bc37c34672b613da"
+    },
+    {
+      "path": "public/build/assets/app-GXC6f0J-.css",
+      "sha256": "7a5cb4991d49cca262171ed6639f20d866ba282678bfe973e8f66200a54a451b"
+    },
+    {
+      "path": "public/build/manifest.json",
+      "sha256": "26073afdc6d483683d19051298907c8f103dcacbb519e9ff396b95e89fd659d9"
+    },
+    {
+      "path": "public/index.php",
+      "sha256": "eba77cba39695b6bd091fe5211d481f7ebb2ce2d8d26230b5a609465d0a4aff9"
+    },
+    {
+      "path": "public/robots.txt",
+      "sha256": "e5c4b84484ee4216e9373be99380320c25dd94805f99f0a805846f087636553f"
+    },
+    {
+      "path": "resources/css/app.css",
+      "sha256": "4331bb60bd089bc243cbe5d48d5897d93a0dafa72709844994b7fbea0f20ae57"
+    },
+    {
+      "path": "resources/js/app.js",
+      "sha256": "3324a2e46fe60d749908a169ed0ccb64a57297db53539741af0223e55fc6872e"
+    },
+    {
+      "path": "resources/views/components/layouts/app.blade.php",
+      "sha256": "d31f2b9f7a4025e2c7f1cd1f0a254aef045d194f9959b8013a0b6ed1d0d2513e"
+    },
+    {
+      "path": "resources/views/errors/403.blade.php",
+      "sha256": "f82a277faadd7280c7c4f68dccefd032b9ea437e449aa11f72e2f06d6983189a"
+    },
+    {
+      "path": "resources/views/errors/404.blade.php",
+      "sha256": "e0190f7aea281daa8d460b25d4628aeb077146a40e3f86bd078c9406648c730a"
+    },
+    {
+      "path": "resources/views/errors/419.blade.php",
+      "sha256": "27dfc0dacae929011e62c03c2f6560139988847fe2f8403d574b9d14dc651e62"
+    },
+    {
+      "path": "resources/views/errors/429.blade.php",
+      "sha256": "18543e38843c02907238854cd9c6060f67171ae573c98de75045f23414061782"
+    },
+    {
+      "path": "resources/views/errors/500.blade.php",
+      "sha256": "ffc031a0b49c1a2b199be352cf840e9e90675d0f277023f8c1fae300d14ac8dc"
+    },
+    {
+      "path": "resources/views/errors/layout.blade.php",
+      "sha256": "22d2c3bde28e27ac0c3add56ec5bae27a112c35f2a91cae498c3b6e2a9ca3932"
+    },
+    {
+      "path": "resources/views/livewire/booking.blade.php",
+      "sha256": "3c9da71c34d0e0785f86a5a408a6b97d53f26eaef7f2e4ac2e677b7c7ec84a03"
+    },
+    {
+      "path": "resources/views/livewire/chatbot.blade.php",
+      "sha256": "f9ca4f190a3b6946cda0ae465477ac16014a07b0e2f1496816a2dba9149a6211"
+    },
+    {
+      "path": "resources/views/livewire/dashboard.blade.php",
+      "sha256": "4c0b80b73b24de5168c793004202dedde4198cfa493a55fe015fed61d278c634"
+    },
+    {
+      "path": "resources/views/livewire/management.blade.php",
+      "sha256": "066747f50a312604054f68cc303e1c3432c03c280d621483e6064571fbe4eedc"
+    },
+    {
+      "path": "resources/views/livewire/public-page.blade.php",
+      "sha256": "660139f1d16d8bfae9e439461b76075cbf454c13b85637570d700e9be27ba2fa"
+    },
+    {
+      "path": "resources/views/livewire/staff-login.blade.php",
+      "sha256": "8e0faa33f73e5d067b1e3975393c114d2c77250c708ce734f92e56afe962bdb8"
+    },
+    {
+      "path": "resources/views/livewire/staff-order.blade.php",
+      "sha256": "4eade3dbc82bcfcfdaad5001aab4a2473b7d6f1d4be4e11b6462169d97570898"
+    },
+    {
+      "path": "resources/views/livewire/tracking.blade.php",
+      "sha256": "445db548d283dd410b69426f7a52e51962e00653b10b81f257b81db2ef97d654"
+    },
+    {
+      "path": "resources/views/partials/branch-cards.blade.php",
+      "sha256": "9f87c92dfe126ed8ea3e648dc0fd9ed24d03eb298eef45dda9b27ee053f4d7a0"
+    },
+    {
+      "path": "resources/views/partials/feedback.blade.php",
+      "sha256": "b57bf6eb8b202c95f541d7e77effcc66e86031812c200c3d8b867f700570f876"
+    },
+    {
+      "path": "resources/views/partials/staff-nav.blade.php",
+      "sha256": "62c6dc7ea9fc3c86571d644ef3e7014f295df45bc229ca0c7efe2bf798039f6b"
+    },
+    {
+      "path": "routes/console.php",
+      "sha256": "7eea1b026844fc7d43b0d08fc8c3e90422f2a5fea04a5072b48053a4938bb6b7"
+    },
+    {
+      "path": "routes/web.php",
+      "sha256": "30121f2877ed961aa1cb65b656aa7ba7ecee275439d6db2e4fbf5909b4fc7e07"
+    },
+    {
+      "path": "storage/app/knowledge/panduan-pelanggan.md",
+      "sha256": "94cec29186bce5db31dd04eb421c033acd13628d3e797e818d5367c3a453af8d"
+    },
+    {
+      "path": "tests/Feature/AssistantTest.php",
+      "sha256": "2230f0b49a423d3ba5b50540d08c91a5e6d413966eb9fc0097441314515ceb64"
+    },
+    {
+      "path": "tests/Feature/WorkflowTest.php",
+      "sha256": "2dd702da9c8a0f4c09a091c6e375c9014aaa435bd424807570511bbc76c2d447"
+    },
+    {
+      "path": "tests/Fixtures/customer-guide.pdf",
+      "sha256": "cd3c4e7c32554b4a23ab695fb849572f8aa635a95f53744a9586c770601dbcb2"
+    },
+    {
+      "path": "tests/TestCase.php",
+      "sha256": "172fba2ba57c147e6dc812198d0d611cf085a2d643f3f597f63c71f071fbbe8c"
+    },
+    {
+      "path": "tests/browser/puro_e2e.py",
+      "sha256": "1f710493960301226a27f11b3a7633ef6525d462d98fcff0febe1c0ebefc6da7"
+    },
+    {
+      "path": "vite.config.js",
+      "sha256": "05d0201283a86c91306e3b3b8357acf8a92fda99cdce8c9f89e42207b1efebf3"
+    }
+  ]
+}

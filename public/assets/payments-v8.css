@@ -1,0 +1,68 @@
+/* Revisi 8: manual payment review and customer tracking. */
+.payment-fields {display:grid;gap:15px;margin:24px 0;padding-top:22px;border-top:1px solid var(--line,#ddd)}
+.payment-fields h3,.payment-review h3 {margin:0}
+.payment-fields input[type=file] {height:auto;padding:12px;font-size:12px;white-space:normal}
+.payment-preview {margin:0;padding:14px;background:#f5f6f2;border:1px solid #e1e4dc;border-radius:8px}
+.payment-preview[hidden] {display:none}
+.payment-preview img {display:block;max-width:100%;max-height:300px;margin:0 auto 10px;object-fit:contain}
+.payment-preview figcaption {font-size:11px;overflow-wrap:anywhere}
+.payment-receipt {border:1px solid;border-radius:12px;padding:22px;margin:20px 0;text-align:left;overflow-wrap:anywhere}
+.payment-receipt h3 {font-size:18px;margin:9px 0}
+.payment-receipt p {font-size:12px;line-height:1.8;margin:8px 0 0}
+.payment-receipt.pending {background:#fff9e5;border-color:#e9c66a;color:#705011}
+.payment-receipt.approved {background:#edf7ef;border-color:#91c49b;color:#205b36}
+.payment-receipt.rejected {background:#fff0ef;border-color:#e5a19c;color:#9c2923}
+.payment-receipt.cancelled {background:#fff0ef;border-color:#ce9995;color:#892822}
+.payment-receipt.rejected {background:#fff9e5;border-color:#e9c66a;color:#705011}
+.payment-receipt .tracking-code-label {font-weight:700;margin-top:16px}
+.payment-resubmit {display:grid;gap:15px;margin:24px 0 0}
+.payment-resubmit .payment-fields {margin:0;padding-top:16px}
+.order-cancellation {margin:24px 0 0;padding:18px;border:1px solid #d8b2ae;border-radius:10px;background:#fff9f8}
+.order-cancellation summary {font-size:13px;font-weight:700;cursor:pointer;color:#9c2923;min-height:44px;line-height:44px}
+.order-cancellation form {display:grid;gap:15px;padding-top:16px}
+.order-cancellation h3 {margin:0}
+.payment-review-history {border-top:1px solid #dce0d5;margin:18px 0 0;padding-top:14px;font-size:12px}
+.payment-review-history summary {cursor:pointer;font-weight:700;min-height:30px}
+.payment-review-history article {padding:12px 0;border-bottom:1px solid #dce0d5;overflow-wrap:anywhere}
+.payment-review-history a {color:#294d28;text-decoration:underline}
+.payment-receipt.awaiting {background:#f5f6f2;border-color:#daddd2;color:#464d3e}
+.payment-receipt .eyebrow {color:inherit}
+.payment-receipt .tracking-code {margin:13px 0 0;background:#fff;gap:10px;justify-content:space-between}
+.payment-receipt .tracking-code strong {font-size:clamp(16px,3vw,25px);letter-spacing:1px;overflow-wrap:anywhere}
+.payment-proof {margin:22px 0;padding:20px;background:#fafbf7;border:1px solid #dce0d5;border-radius:10px}
+.payment-proof .detail-grid {margin:16px 0}
+.payment-proof-image {display:block;margin:12px 0}
+.payment-proof-image img {display:block;width:100%;height:auto;max-height:440px;object-fit:contain;background:#ecefe8;border-radius:8px}
+.payment-review {display:grid;gap:14px;margin-top:20px}
+.payment-review .checkbox-line {align-items:flex-start;line-height:1.7}
+.payment-review .field-wrap {gap:8px}
+.payment-review-actions,.order-row-actions,.payment-message-actions {display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.order-row-actions {flex-wrap:nowrap}
+.btn.btn-whatsapp {background:#e7f6ed;border:1px solid #a5ceb7;color:#1d6340;white-space:nowrap}
+.btn.btn-whatsapp:hover {background:#ccebd9;color:#174e33}
+.btn.btn-whatsapp[aria-disabled=true] {opacity:.5;cursor:not-allowed}
+.payment-message-actions {margin:16px 0}
+.btn.btn-reject {background:#b8322d;border:1px solid #b8322d;color:#fff}
+.btn.btn-reject:hover {background:#962822}
+.payment-popup {text-align:center;max-width:540px}
+.payment-popup .modal-head {text-align:left}
+.payment-popup .success-mark {margin:24px auto 16px}
+.payment-popup p {font-size:13px;line-height:1.9}
+.payment-popup .inline-actions {justify-content:center;margin-top:22px}
+.recent-orders {margin:22px 0}
+.recent-order {display:flex;gap:18px;justify-content:space-between;align-items:center;padding:17px 0;border-bottom:1px solid #e3e5dd}
+.recent-order strong,.recent-order small {display:block}
+.recent-order small {color:var(--muted);font-size:11px;margin:5px 0 9px}
+.recent-order .btn {flex-shrink:0}
+.tracking-rejected .timeline-dot {background:#b8322d;color:white;border-color:#b8322d}
+.payment-form-error {color:#a82e29;font-size:12px}
+.payment-form-error:empty {display:none}
+@media (max-width:600px) {
+ .payment-receipt,.payment-proof {padding:16px}
+ .payment-receipt .tracking-code {flex-wrap:wrap}
+ .payment-review-actions>.btn {flex:1;min-width:150px}
+ .payment-popup .inline-actions {display:grid}
+ .recent-order {flex-wrap:wrap;gap:10px}
+ .payment-fields {min-width:0}
+ .payment-fields .field {min-width:0;max-width:100%}
+}
