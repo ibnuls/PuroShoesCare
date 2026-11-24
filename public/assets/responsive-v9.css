@@ -1,0 +1,171 @@
+/* Revisi 9: service FAQs and responsive customer / staff layouts. */
+.v3610-category-tabs {
+  position:sticky;
+  top:var(--puro-public-header-h,80px);
+  z-index:15;
+  padding:14px 0;
+  background:var(--bg,#f6f5f0);
+  border-bottom:1px solid var(--line);
+}
+.v3610-category-tabs .filter-chip {min-height:44px;flex-shrink:0}
+.v3610-category-tabs .filter-chip[data-id=faq] {border-color:#89922e}
+.v3610-catalog-section,.v3610-services-page {scroll-margin-top:calc(var(--puro-public-header-h,80px) + 92px)}
+.services-faq {margin-bottom:0;padding-top:38px;border-top:1px solid var(--line)}
+.services-faq-heading {display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:28px}
+.services-faq-heading h2 {font-size:clamp(28px,4vw,42px);margin:12px 0 0;letter-spacing:-.055em}
+.services-faq-heading h2 span {color:#8c9900}
+.services-faq-heading h2:focus {outline:none}
+.services-faq-heading>p {max-width:350px;margin:0;font-size:13px;color:var(--muted);line-height:1.8}
+.services-faq-list {border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--paper)}
+.services-faq-item+.services-faq-item {border-top:1px solid var(--line)}
+.services-faq-item summary {list-style:none;display:flex;align-items:center;gap:20px;min-height:76px;padding:22px 26px;cursor:pointer;font-weight:750;font-size:14px;line-height:1.6}
+.services-faq-item summary::-webkit-details-marker {display:none}
+.services-faq-item summary:hover,.services-faq-item[open] summary {background:#f1f4e6}
+.services-faq-item summary:focus-visible {outline:3px solid #8a9500;outline-offset:-3px}
+.services-faq-number {color:#818870;font-size:11px;flex-shrink:0;font-weight:600;letter-spacing:.05em}
+.services-faq-icon {position:relative;margin-left:auto;width:26px;height:26px;flex:0 0 26px;border:1px solid #d0d6c7;border-radius:50%}
+.services-faq-icon::before,.services-faq-icon::after {content:'';position:absolute;left:7px;top:11px;width:10px;height:2px;background:#343d26}
+.services-faq-icon::after {transform:rotate(90deg);transition:transform .15s ease}
+.services-faq-item[open] .services-faq-icon::after {transform:rotate(0)}
+.services-faq-answer {padding:0 72px 24px 62px;background:#f1f4e6}
+.services-faq-answer p {font-size:14px;line-height:1.9;color:#5e6657;margin:0;max-width:880px}
+.services-faq-footer {display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:24px;padding:24px;border-radius:12px;border:1px solid var(--line);background:#edf0e1}
+.services-faq-footer p {margin:0 auto 0 0;font-size:14px;font-weight:650}
+.order-grid>*,.pay-layout>*,.auth-layout>*,.settings-grid>*,.team-grid>*,.detail-grid>*,.form-grid>*,.puro-v35-contactinner>*,.puro-v35-about>* {min-width:0}
+.detail-grid strong,.detail-grid p,.detail-grid span,.notice,.help-text {overflow-wrap:anywhere}
+.table-wrap {max-width:100%;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+.modal-box {overscroll-behavior:contain;scrollbar-gutter:stable}
+.icon-close {min-width:44px;min-height:44px}
+body:has(.modal-backdrop) {overflow:hidden}
+
+@media(max-width:1024px) {
+  :root {--puro-public-header-h:70px}
+  .header-inner,.puro-home .header-inner {height:70px;gap:16px}
+  .site-header .public-nav,.puro-home .site-header .public-nav {display:none;position:absolute;top:70px;left:0;right:0;max-height:calc(100dvh - 70px);overflow-y:auto;background:#111;border-bottom:1px solid #333;flex-direction:column;align-items:stretch;gap:0;padding:12px 24px 20px}
+  .site-header .public-nav.open,.puro-home .site-header .public-nav.open {display:flex}
+  .site-header .public-nav a,.puro-home .site-header .public-nav a {width:100%;min-height:46px;padding:13px 16px;text-align:left;justify-content:flex-start;font-size:13px}
+  .site-header .public-nav a.active:after,.puro-home .site-header .public-nav a.active:after {left:0;right:auto;top:13px;bottom:auto;height:22px;width:3px;transform:none}
+  .header-actions {gap:10px}
+  .header-cta {display:none}
+  .hamburger {display:flex;min-width:44px;min-height:44px;align-items:center;justify-content:center}
+  .text-button {min-height:44px}
+  .v3610-category-tabs {flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#a6af77 transparent;-webkit-overflow-scrolling:touch}
+  .v3610-category-tabs .filter-chip {white-space:nowrap}
+}
+
+@media(max-width:800px) {
+  .container {width:calc(100% - 36px)}
+  .v3610-category-tabs {flex-wrap:nowrap;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#a6af77 transparent;-webkit-overflow-scrolling:touch;padding:12px 0;margin:24px 0}
+  .v3610-category-tabs .filter-chip {font-size:12px;padding:10px 14px;white-space:nowrap}
+  .v3610-catalog-section {scroll-margin-top:calc(var(--puro-public-header-h) + 86px)}
+  .services-faq-heading {flex-direction:column;align-items:flex-start;gap:15px}
+  .services-faq-heading>p {max-width:100%;font-size:14px}
+  .order-grid,.pay-layout,.auth-layout,.settings-grid,.team-grid,.track-inline-panel {grid-template-columns:minmax(0,1fr)}
+  .quote-panel {position:static}
+  .field,.textarea,.staff-app .field-wrap .field,.staff-app .field-wrap .textarea {font-size:16px;max-width:100%;min-width:0}
+  .btn {min-height:44px;white-space:normal}
+  .staff-app .table-wrap .btn {min-height:44px}
+  .staff-app .data-table td {font-size:12px}
+  .staff-app .order-row-actions {gap:8px}
+  .staff-app .staff-navigation {max-height:calc(100dvh - 100px);overflow-y:auto;overscroll-behavior:contain}
+  .staff-topbar {flex-wrap:wrap;gap:12px}
+  .staff-controls {max-width:100%;flex-wrap:wrap}
+  .staff-account {overflow-wrap:anywhere}
+  .staff-content {min-width:0}
+  .staff-app .filter-bar {gap:8px}
+  .staff-app .filter-chip,.staff-app .order-branch-dropdown {min-height:44px}
+  .dashboard-intro-actions {max-width:100%}
+  .payment-review-actions>.btn {min-width:0}
+  .qr-wrap {min-width:0;max-width:100%}
+}
+
+@media(max-width:600px) {
+  .page-shell>.page-intro {display:block}
+  .page-shell>.page-intro h1 {font-size:clamp(32px,9vw,46px)}
+  .page-shell>.page-intro p {font-size:14px;line-height:1.8;max-width:100%}
+  .hero-v35 .hero-v35-copy>p {font-size:14px}
+  .puro-v369-services .puro-v35-servicecontent p,.puro-v35-branchcontent p,.puro-v35-processgrid p {font-size:13px;line-height:1.7}
+  .puro-v35-servicebase span,.puro-v35-open {font-size:11px;line-height:1.6}
+  .puro-v35-branchlink {font-size:12px;min-height:44px;align-items:center}
+  .promo-v35-copy p {font-size:12px;line-height:1.6}
+  .promo-v35-cta {min-height:44px;font-size:11px;display:inline-flex;align-items:center;justify-content:center}
+  .hero-v35-perks strong,.hero-v35-perks small {font-size:12px;line-height:1.5}
+  .v3610-catalog-card .puro-v35-servicecontent {padding:20px}
+  .v3610-catalog-card .puro-v35-servicecontent h3 {font-size:21px}
+  .v3610-catalog-card .puro-v35-servicecontent>p {font-size:13px;min-height:0;line-height:1.8}
+  .v3610-service-meta {font-size:12px}
+  .v3610-service-price {font-size:18px}
+  .v3610-catalog-card .puro-v35-servicecontent>.btn {width:100%;font-size:13px}
+  .services-faq {padding-top:28px;margin-top:36px}
+  .services-faq-item summary {gap:12px;padding:18px 16px;align-items:flex-start;font-size:14px;min-height:70px}
+  .services-faq-number {margin-top:4px}
+  .services-faq-icon {margin-top:1px}
+  .services-faq-answer {padding:0 20px 22px 43px}
+  .services-faq-footer {padding:20px;align-items:stretch}
+  .services-faq-footer p {width:100%;line-height:1.7;margin-bottom:5px}
+  .services-faq-footer .btn {width:100%;font-size:13px}
+  .form-grid,.choice-row {grid-template-columns:minmax(0,1fr)}
+  .panel-pad,.checkout-detail {padding:20px}
+  .checkbox-line {align-items:flex-start;line-height:1.8}
+  .checkbox-line input {flex-shrink:0;margin-top:5px;min-width:18px;min-height:18px}
+  .inline-actions {align-items:stretch}
+  .inline-actions>.field-wrap {flex:1 1 100%}
+  .inline-actions>.btn {flex:1 1 auto}
+  .tracking-code {padding:16px;flex-wrap:wrap;max-width:100%}
+  .tracking-code strong {font-size:clamp(17px,5vw,24px);overflow-wrap:anywhere}
+  .success-hero,.track-card {padding:20px}
+  .payment-receipt .tracking-code {padding:12px}
+  .payment-review-actions {align-items:stretch}
+  .payment-review-actions>.btn,.payment-message-actions>.btn {flex:1 1 100%}
+  .payment-fields input[type=file],.v3610-photo-form input[type=file] {font-size:13px;min-width:0;width:100%}
+  .modal-backdrop {padding:max(10px,env(safe-area-inset-top)) max(10px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left))}
+  .modal-box {width:100%;max-height:calc(100dvh - 24px);padding:20px}
+  .modal-head {gap:12px;align-items:flex-start}
+  .modal-head h2 {font-size:23px;overflow-wrap:anywhere}
+  .v3610-poster-actions {padding:14px 16px max(14px,env(safe-area-inset-bottom))}
+  .v3610-price-row {grid-template-columns:minmax(0,1fr)}
+  .v3610-photo-card {grid-template-columns:64px minmax(0,1fr);gap:12px}
+  .v3610-photo-actions .btn {font-size:11px}
+  .staff-app .management-heading {align-items:flex-start;flex-wrap:wrap}
+  .staff-app .branch-manage-row {flex-wrap:wrap}
+  .staff-app .branch-manage-row>span:first-child {flex:1 1 150px;min-width:0}
+  .staff-app .branch-manage-row .pill {white-space:normal}
+  .staff-app .team-person,.staff-app .team-person>div {min-width:0;overflow-wrap:anywhere}
+  .staff-app .report-tag {white-space:normal}
+  .staff-app .qris-section-heading {flex-wrap:wrap}
+  .staff-app .detail-grid {grid-template-columns:minmax(0,1fr)}
+  .detail-grid .pill {white-space:normal}
+  .footer-main {grid-template-columns:minmax(0,1fr);gap:34px;padding-bottom:38px}
+  .footer-main>div:first-child {grid-column:auto}
+  .site-footer {padding-top:48px}
+  .puro-v35-contactactions {flex-wrap:wrap}
+}
+
+@media(max-width:380px) {
+  .container {width:calc(100% - 28px)}
+  .header-inner,.puro-home .header-inner {gap:8px}
+  .header-actions {gap:2px}
+  .brand {gap:7px}
+  .site-header .text-button {font-size:11px;padding:4px}
+  .tiny-dot {margin-right:4px}
+  .hero-v35 .hero-v35-copy h1 {font-size:clamp(32px,10.5vw,40px)}
+  .hero-v35-buttons {flex-direction:column;align-items:stretch}
+  .hero-v35-buttons .btn {width:100%;font-size:12px}
+  .hero-v35-perks {grid-template-columns:minmax(0,1fr)}
+  .hero-v35-perks>div {border-right:0}
+  .puro-v35-branchgrid,.puro-v35-processgrid,.promo-v35-grid {grid-template-columns:minmax(0,1fr)}
+  .promo-v35-card,.promo-v35-copy {min-height:190px}
+  .puro-v35-branchphoto {height:150px}
+  .puro-v35-branchcontent p,.puro-v35-processgrid p {font-size:12px}
+  .staff-app .insights-grid {grid-template-columns:minmax(0,1fr)}
+  .staff-app .insight-card {min-height:120px}
+  .staff-content {padding:22px 14px 32px}
+  .staff-sidebar {padding:12px 14px!important}
+  .sidebar-brand-caption {font-size:7px}
+  .detail-grid {grid-template-columns:minmax(0,1fr)}
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html {scroll-behavior:auto}
+  .services-faq-icon::after {transition:none}
+}

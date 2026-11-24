@@ -1,0 +1,69 @@
+.puro-assistant-launcher{position:fixed;right:24px;bottom:max(24px,env(safe-area-inset-bottom));z-index:65;display:flex;align-items:center;gap:10px;padding:15px 20px;min-height:56px;background:#e8ff00;border:1px solid #111;border-radius:999px;color:#111;box-shadow:0 6px 26px #1113;font-size:13px;font-weight:800}
+.puro-assistant-launcher svg{width:25px;height:25px;flex-shrink:0}
+.puro-assistant-panel{position:fixed;z-index:70;right:24px;bottom:94px;width:410px;max-width:calc(100vw - 32px);height:min(690px,calc(100dvh - 115px));background:#fffefa;border:1px solid #cfd2c6;border-radius:18px;box-shadow:0 15px 60px #1113;display:flex;flex-direction:column;overflow:hidden;color:#18231c}
+.puro-assistant-head{display:flex;align-items:center;gap:12px;padding:18px;background:#111;color:#fff;flex-shrink:0}
+.puro-assistant-avatar{width:42px;height:42px;border-radius:12px;background:#e8ff00;display:grid;place-content:center;font-weight:900;font-size:26px;color:#111;position:relative}
+.puro-assistant-avatar span{position:absolute;bottom:0;right:5px}
+.puro-assistant-head h2{font-size:16px;margin:0 0 5px;letter-spacing:-.03em}
+.puro-assistant-head p{font-size:10px;line-height:1.4;color:#ccc;margin:0}
+.puro-assistant-close{margin-left:auto;min-width:44px;min-height:44px;background:#252525;color:#fff;border:1px solid #444;border-radius:50%;font-size:25px}
+.puro-assistant-links{display:flex;align-items:center;gap:15px;padding:8px 16px;border-bottom:1px solid #e2e4dc;flex-shrink:0}
+.puro-assistant-links a,.puro-assistant-links button{font-size:11px;font-weight:750;min-height:36px;display:inline-flex;align-items:center;border:0;background:none;padding:0}
+.puro-assistant-log{flex:1;min-height:80px;overflow:auto;overscroll-behavior:contain;padding:16px;scrollbar-width:thin}
+.puro-assistant-message{padding:13px 15px;border-radius:12px;background:#f0f2e8;margin-bottom:12px;max-width:95%;font-size:13px;line-height:1.8;overflow-wrap:anywhere}
+.puro-assistant-message.user{margin-left:auto;background:#e8ff00}
+.puro-assistant-message>small{font-size:10px;display:block;font-weight:800;margin-bottom:5px;color:#59604a}
+.puro-assistant-message>p{white-space:pre-wrap;margin:0}
+.puro-assistant-message.pending{color:#6d755f}
+.puro-assistant-retry{min-height:44px;padding:9px 14px;border:1px solid #859255;border-radius:8px;background:#fff;color:#354324;font-size:12px;font-weight:750;margin-top:12px}
+.puro-assistant-sources{border-top:1px solid #d5dac8;margin-top:12px;padding-top:10px;display:grid;gap:6px}
+.puro-assistant-sources small{font-weight:800;font-size:10px}
+.puro-assistant-sources a{font-size:11px;text-decoration:underline;text-underline-offset:3px}
+.puro-assistant-shortcuts{display:flex;flex-wrap:wrap;gap:7px;padding:0 16px 12px;flex-shrink:0}
+.puro-assistant-shortcuts button{font-size:11px;padding:8px 11px;min-height:40px;border:1px solid #d2d8c3;border-radius:999px;background:#fff}
+#puro-assistant-form{padding:12px 14px 7px;border-top:1px solid #e2e4dc;flex-shrink:0}
+.puro-assistant-inputrow{display:flex;gap:8px;align-items:stretch}
+.puro-assistant-inputrow textarea{resize:vertical;min-width:0;max-height:100px;min-height:54px;flex:1;border:1px solid #d5d9ca;border-radius:10px;padding:12px;font-size:14px;line-height:1.5;background:#fff}
+.puro-assistant-inputrow button{background:#111;border:0;border-radius:12px;color:#e8ff00;width:46px;flex-shrink:0;font-size:24px}
+.puro-assistant-privacy{font-size:9px;color:#727969;line-height:1.7;margin:7px 0 0}
+.puro-assistant-bottom{display:flex;justify-content:space-between;gap:10px;padding:2px 15px 10px;flex-shrink:0}
+.puro-assistant-bottom button{border:0;background:none;padding:7px 0;min-height:36px;font-size:10px;color:#69705e}
+.puro-assistant-bottom .puro-assistant-admin{color:#243a23;font-weight:800;font-size:11px}
+.puro-assistant-handoff{margin-top:14px;padding-top:13px;border-top:1px solid #d3d9c4}
+.puro-assistant-handoff>strong{font-size:13px}
+.puro-assistant-handoff>p{font-size:12px;margin:7px 0;line-height:1.8}
+.puro-assistant-handoff details{margin:10px 0;font-size:11px}
+.puro-assistant-handoff summary{cursor:pointer;padding:8px 0;min-height:36px}
+.puro-assistant-handoff textarea{font:12px/1.6 'DM Sans',sans-serif;border:1px solid #d1d7c6;border-radius:8px;background:#fff;padding:10px;width:100%;min-height:155px;resize:vertical}
+.puro-assistant-handoff .puro-assistant-wa{display:flex;justify-content:center;align-items:center;min-height:44px;margin-top:12px;padding:10px 12px;border-radius:9px;border:1px solid #98c4a7;background:#dff2e5;color:#1c5832;font-size:12px;font-weight:800;text-decoration:none}
+.puro-assistant-contact-missing{color:#736225}
+.puro-assistant-handoff>a:not(.puro-assistant-wa){font-size:12px;font-weight:800;text-decoration:underline}
+body:has(.modal-backdrop) #puro-assistant-root{visibility:hidden}
+@media(max-width:600px){
+ .puro-assistant-launcher{right:16px;bottom:max(18px,env(safe-area-inset-bottom));width:56px;height:56px;justify-content:center;padding:13px}
+ .puro-assistant-launcher>span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+ .puro-assistant-panel{right:10px;left:10px;bottom:max(12px,env(safe-area-inset-bottom));width:auto;max-width:none;height:min(740px,calc(100dvh - 84px));border-radius:16px}
+ .puro-assistant-head{padding:12px}
+ .puro-assistant-links{gap:13px;padding:3px 12px}
+ .puro-assistant-links a,.puro-assistant-links button{min-height:44px}
+ .puro-assistant-message{font-size:14px;max-width:100%;padding:12px}
+ .puro-assistant-shortcuts button{min-height:44px;font-size:12px}
+ .puro-assistant-inputrow textarea,.puro-assistant-handoff textarea{font-size:16px}
+ .puro-assistant-privacy{font-size:10px}
+ .puro-assistant-bottom button{min-height:44px;font-size:11px}
+ .puro-assistant-bottom .puro-assistant-admin{font-size:12px}
+ .site-footer{padding-bottom:94px}
+}
+@media(max-height:540px){
+ .puro-assistant-panel{top:8px;bottom:8px;height:auto}
+ .puro-assistant-head{padding:7px 12px}
+ .puro-assistant-head p,.puro-assistant-avatar,.puro-assistant-shortcuts{display:none}
+ .puro-assistant-privacy{display:none}
+ .puro-assistant-links{padding-top:0;padding-bottom:0}
+ .puro-assistant-links a,.puro-assistant-links button{min-height:32px;font-size:10px}
+ .puro-assistant-log{min-height:0;padding:10px 12px}
+ .puro-assistant-inputrow textarea{height:42px;min-height:42px;padding:8px 10px;resize:none}
+ .puro-assistant-bottom button{min-height:30px;font-size:10px}
+ #puro-assistant-form{padding-top:7px;padding-bottom:0}
+ .puro-assistant-bottom{padding-bottom:3px}
+}
